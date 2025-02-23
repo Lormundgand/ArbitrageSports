@@ -24,8 +24,8 @@ def getPage(url):
     logging.getLogger("selenium").setLevel(logging.CRITICAL)
 
     # Initialisation du webdriver
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=chrome_options)
+    service = Service("C:/WebDriver/chromedriver.exe")
+    driver = webdriver.Chrome(service=service)
     
     try:
         # Naviguer vers l'URL

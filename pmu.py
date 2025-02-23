@@ -12,7 +12,8 @@ def getPage():
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    service = Service("C:/WebDriver/chromedriver.exe")
+    driver = webdriver.Chrome(service=service)
     driver.get(url)
     
     # Wait for the page to load (optional: you can add explicit waits for specific elements if needed)

@@ -30,7 +30,9 @@ def init_driver():
     chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])  # Désactiver les messages de log
     chrome_options.add_argument("--disable-logging")  # Option supplémentaire pour limiter les messages internes
 
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+    service = Service("C:/WebDriver/chromedriver.exe")
+    driver = webdriver.Chrome(service=service)
+    
     driver.set_window_size(1920, 1080)
     return driver
 
