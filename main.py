@@ -5,7 +5,7 @@ import betclic
 import arbitrage
 
 sys.stdout.reconfigure(encoding='utf-8')
-# On fait caca et on retire le logging pour les perfs
+# On fait un gros caca et on retire le logging pour les perfs
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
 """
 Fonctionnement du code:
